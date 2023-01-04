@@ -3,6 +3,7 @@ package com.razgallah.TBS.Management.System.user.student;
 import com.razgallah.TBS.Management.System.user.Person;
 import com.razgallah.TBS.Management.System.user.Role;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,6 +20,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "Students")
 public class Student extends Person implements UserDetails {
 
     private String major;

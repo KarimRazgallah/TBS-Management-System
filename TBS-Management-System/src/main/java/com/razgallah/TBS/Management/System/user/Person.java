@@ -21,7 +21,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@MappedSuperclass
 public abstract class Person implements UserDetails {
 
     @Id
