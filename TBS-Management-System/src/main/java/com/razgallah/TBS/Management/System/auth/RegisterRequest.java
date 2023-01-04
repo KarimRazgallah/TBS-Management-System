@@ -24,4 +24,6 @@ public class RegisterRequest {
     private String major;
     private String minor;
     private String task;
+    private String subject;
+    private Integer yearsOfExperience;
 }
