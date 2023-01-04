@@ -34,6 +34,13 @@ public class AuthenticationController {
         return ResponseEntity.ok(service.registerStudent(request));
     }
 
+    @PostMapping("/admin/register")
+    public ResponseEntity<AuthenticationResponse> registerAdmin(
+            @RequestBody RegisterRequest request
+    ) {
+        return ResponseEntity.ok(service.registerAdmin(request));
+    }
+
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> authenticate(
             @RequestBody AuthenticationRequest request
@@ -46,6 +53,13 @@ public class AuthenticationController {
             @RequestBody AuthenticationRequest request
     ) {
         return ResponseEntity.ok(service.authenticateStudent(request));
+    }
+
+    @PostMapping("/admin/authenticate")
+    public ResponseEntity<AuthenticationResponse> authenticateAdmin(
+            @RequestBody AuthenticationRequest request
+    ) {
+        return ResponseEntity.ok(service.authenticateAdmin(request));
     }
 
 

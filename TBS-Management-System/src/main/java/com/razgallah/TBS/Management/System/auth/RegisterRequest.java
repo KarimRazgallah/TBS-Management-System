@@ -23,4 +23,5 @@ public class RegisterRequest {
     private Integer phoneNumber;
     private String major;
     private String minor;
+    private String task;
 }
